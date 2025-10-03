@@ -1,1 +1,2 @@
-print("==========Slip Gaji==========")
+print("==========Program Slip Gaji==========")
+
