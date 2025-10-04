@@ -1,9 +1,3 @@
-print("==========Program Slip Gaji==========")
-
-print('uhuy')
-
-print('mabar')
-
 def pemasukan(jumlah):
     return jumlah
 
@@ -25,8 +19,10 @@ def tampilkan_slip(nama, pemasukan, pengeluaran, sisa):
     print("===============================\n")
 
 def main():
+
+    nama = input('Masukan nama kamu : ')
+    saldo = 0
     while True:
-        nama = input('Masukan nama kamu : ')
         masuk = int(input('Masukan pemasukan : '))
         keluar = int(input('Masukan pengeluaran : '))
         masukan = pemasukan(masuk)
