@@ -30,4 +30,14 @@ def potong_gaji(gaji):
         print(f"Potongan sebesar Rp {potongan:,} berhasil dikurangkan.")
         print(f"Gaji setelah potongan: Rp {gaji:,}")
     return gaji
-
+    
+def tampilkan_slip(nama, jabatan, gaji):
+    garis()
+    print("SLIP GAJI KARYAWAN")
+    garis()
+    print(f"Nama Karyawan : {nama}")
+    print(f"Jabatan       : {jabatan}")
+    print(f"Gaji Bersih   : Rp {gaji:,}")
+    garis()
+    print("Terima kasih atas kerja keras Anda.")
+    garis()
