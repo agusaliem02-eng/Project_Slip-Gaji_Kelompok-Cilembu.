@@ -41,3 +41,38 @@ def tampilkan_slip(nama, jabatan, gaji):
     garis()
     print("Terima kasih atas kerja keras Anda.")
     garis()
+
+def main():
+    garis()
+    print("PROGRAM SLIP GAJI KARYAWAN")
+    garis()
+    nama = input("Masukkan nama karyawan : ").title()
+    jabatan = input("Masukkan jabatan (Magang/Karyawan/Manajer): ").lower()
+    gaji = hitung_gaji(jabatan)
+
+    while True:
+        garis()
+        print("PILIH MENU DI BAWAH INI!")
+        garis()
+        print("1. Tambah Bonus")
+        print("2. Tambah Potongan")
+        print("3. Cetak Slip Gaji")
+        print("4. Keluar Program")
+        garis()
+        pilihan = input("Masukkan pilihan (1-4): ")
+
+        if pilihan == '1':
+            gaji = tambah_bonus(gaji)
+        elif pilihan == '2':
+            gaji = potong_gaji(gaji)
+        elif pilihan == '3':
+            tampilkan_slip(nama, jabatan, gaji)
+        elif pilihan == '4':
+            garis()
+            print("Program selesai. Terima kasih.")
+            garis()
+            break
+        else:
+            print("Pilihan tidak valid!")
+
+main()
